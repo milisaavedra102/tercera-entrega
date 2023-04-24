@@ -1,0 +1,65 @@
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+    height: 500px;
+
+    .card {
+        width: 400px;
+        height: 400px;
+        background-color: $color1;
+        border: 2px solid $color2;
+
+        img {
+            object-fit: cover;
+            border-radius: 5px;
+            height: 70%;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .button_div {
+            padding: 10px;
+
+            button {
+                background-color: $color4;
+                width: 30%;
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 769px){
+
+    .cards {
+
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+        height: fit-content;
+
+    
+        .card {
+            width: 350px;
+            height: 350px;
+    
+        }
+    }
+
+}

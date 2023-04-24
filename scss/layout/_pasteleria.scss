@@ -1,0 +1,40 @@
+.title_div {
+    text-align: center;
+
+    padding: 30px;
+
+    h1 {
+        font-size: 100px;
+        color: $color1;
+    }
+}
+
+
+
+.card_pasteleria {
+    height: fit-content;
+    gap: 100px;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+
+
+@media only screen and (max-width: 769px) {
+
+    .title_div {
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+
+
+    .card_pasteleria {
+        height: fit-content;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+}
