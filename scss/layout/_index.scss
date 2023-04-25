@@ -1,7 +1,13 @@
 .section_h1 {
     height: 700px;
-    background-image: url(/assets/fondopasteleria.jpg);
+    background-size: cover;
     background-position: center;
+    transition: 0.5s;
+    animation-name: hb;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 20s;
+    animation-delay: 1s;
 
     div {
         display: flex;
@@ -58,6 +64,37 @@
         }
     }
 }
+
+
+
+@keyframes hb{
+
+    0%{
+        background-image: url(../assets/fondopasteleria.jpg);
+        @include animacion-img;
+    }
+
+    25%{
+        background-image: url(../assets/local.png);
+        @include animacion-img;
+    }
+
+    50%{
+        background-image: url(../assets/cupcakechocolate.png);
+        @include animacion-img;
+    }
+
+    75%{
+        background-image: url(../assets/);
+        @include animacion-img;
+    }
+
+    100%{
+        background-image: url(../assets/);
+        @include animacion-img;
+    }
+}
+
 
 @media only screen and (max-width: 769px) {
 

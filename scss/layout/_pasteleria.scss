@@ -12,6 +12,7 @@
 
 
 .card_pasteleria {
+    @extend .card;
     height: fit-content;
     gap: 100px;
     justify-content: space-evenly;

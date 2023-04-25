@@ -159,24 +159,24 @@ footer {
   flex-direction: row;
   padding: 20px;
   height: 500px; }
-  .cards .card {
+  .cards .card, .cards .card_pasteleria {
     width: 400px;
     height: 400px;
     background-color: #ffc0cb;
     border: 2px solid #ee82ee; }
-    .cards .card img {
+    .cards .card img, .cards .card_pasteleria img {
       object-fit: cover;
       border-radius: 5px;
       height: 70%; }
-    .cards .card h3 {
+    .cards .card h3, .cards .card_pasteleria h3 {
       padding: 10px;
       font-size: 30px; }
-    .cards .card p {
+    .cards .card p, .cards .card_pasteleria p {
       padding: 10px;
       font-size: 20px; }
-    .cards .card .button_div {
+    .cards .card .button_div, .cards .card_pasteleria .button_div {
       padding: 10px; }
-      .cards .card .button_div button {
+      .cards .card .button_div button, .cards .card_pasteleria .button_div button {
         background-color: #f5f5dc;
         width: 30%; }
 
@@ -188,7 +188,7 @@ footer {
     padding: 10px;
     gap: 15px;
     height: fit-content; }
-    .cards .card {
+    .cards .card, .cards .card_pasteleria {
       width: 350px;
       height: 350px; } }
 
@@ -215,8 +215,14 @@ footer {
 
 .section_h1 {
   height: 700px;
-  background-image: url(/assets/fondopasteleria.jpg);
-  background-position: center; }
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  animation-name: hb;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 20s;
+  animation-delay: 1s; }
   .section_h1 div {
     display: flex;
     justify-content: center;
@@ -252,6 +258,33 @@ footer {
     color: #ffc0cb;
     height: 50px;
     padding-top: 20px; }
+
+@keyframes hb {
+  0% {
+    background-image: url(../assets/fondopasteleria.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 3s; }
+  25% {
+    background-image: url(../assets/local.png);
+    background-size: cover;
+    background-position: center;
+    transition: 3s; }
+  50% {
+    background-image: url(../assets/cupcakechocolate.png);
+    background-size: cover;
+    background-position: center;
+    transition: 3s; }
+  75% {
+    background-image: url(../assets/);
+    background-size: cover;
+    background-position: center;
+    transition: 3s; }
+  100% {
+    background-image: url(../assets/);
+    background-size: cover;
+    background-position: center;
+    transition: 3s; } }
 
 @media only screen and (max-width: 769px) {
   .main_index {
